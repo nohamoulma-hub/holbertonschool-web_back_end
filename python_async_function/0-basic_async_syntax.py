@@ -7,5 +7,8 @@ import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
+    """creation of asynchronous coroutine who
+    takes a delay random between 0 to 10s """
+
     delay = random.uniform(0, max_delay)
     return delay
