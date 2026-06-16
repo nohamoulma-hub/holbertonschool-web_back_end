@@ -26,6 +26,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         # await récupère la valeur de retour de la task une fois
         # qu'elle est terminée (ici : le délai généré aléatoirement)
 
-        result = await task
-        delays.append(result)
+        delay = await task
+        delays.append(delay)
     return delays
