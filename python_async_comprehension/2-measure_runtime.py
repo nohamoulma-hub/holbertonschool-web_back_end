@@ -13,6 +13,6 @@ async def measure_runtime() -> float:
 
     debut = time.perf_counter()
     await asyncio.gather(*(async_comprehension() for _ in range(4)))
-    #gather lance les 4 en même temps
+    #  gather lance les 4 en même temps
     fin = time.perf_counter()
     return fin - debut
